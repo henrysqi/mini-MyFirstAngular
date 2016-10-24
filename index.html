@@ -7,7 +7,7 @@
   <body ng-controller="mainCtrl">
 		<h1>My Friends</h1>
 		<input type="text" placeholder="Enter Name" ng-model="name"><button ng-click="addFriend(name)">Add Friend</button>
-		<div ng-repeat="friend in friends">
+		<div ng-repeat="friend in friends track by $index">
 			<p>{{friend}}</p>
 		</div>
 	
